@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 const api = {
-  key: "7d4ef5d23648c7c62acd3ccfa1a0a30b",
+  key: "f4dfeb6bba530d5cb6ecff03630fde73",
   base: "https://api.openweathermap.org/data/2.5/"
 }
 
@@ -42,7 +42,7 @@ function App() {
             placeholder="Search..."
             onChange={e => setQuery(e.target.value)}
             value={query}
-            onKeyPress={search}
+            onKeyDown={search}
           />
         </div>
         {(typeof weather.main != "undefined") ? (
